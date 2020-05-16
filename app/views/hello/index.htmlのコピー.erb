@@ -1,0 +1,22 @@
+<% provide(:title, "Home") %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    </head>
+    <body>
+        <h1>Sample App</h1>
+        <%= yield(:title) %> | Ruby on Rails Tutorial Sample App
+
+        <p>現在時刻: <%= @time %></p>
+
+        <p>
+        <% @titles.each do |title| %>
+        [タイトル] <%= title.name %>, [発売日] <%= title.sales_date %><br />
+        <% end %>
+        </p>
+
+        <p>Find me in app/views/hello/index.html.erb</p>
+
+    </body>
+</html>
