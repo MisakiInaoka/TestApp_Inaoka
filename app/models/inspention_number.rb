@@ -1,0 +1,2 @@
+class InspentionNumber < ApplicationRecord
+end
