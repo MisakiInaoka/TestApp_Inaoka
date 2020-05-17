@@ -1,0 +1,2 @@
+class PositiveAttr < ApplicationRecord
+end
